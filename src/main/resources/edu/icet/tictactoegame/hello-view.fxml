@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.tictactoegame.HelloController">
    <children>
       <GridPane layoutX="54.0" layoutY="99.0" prefHeight="305.0" prefWidth="493.0">
         <columnConstraints>
@@ -70,7 +70,7 @@
             </Button>
          </children>
       </GridPane>
-      <Label layoutX="224.0" layoutY="14.0" text="Player X Turn">
+      <Label fx:id="lblStatus" layoutX="224.0" layoutY="14.0" text="Player X Turn">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="25.0" />
          </font>
