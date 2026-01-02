@@ -44,12 +44,11 @@ public class HelloController {
             playerTurn = 0;
         }
 
-        checkWinner(); // දිනුම්ද බලන්න
+        checkWinner();
     }
 
     @FXML
     void btnOnClickReset(ActionEvent event) {
-        // ගේම් එක මුල ඉඳන් පටන් ගන්න
         buttons.forEach(this::resetButton);
         lblStatus.setText("Player X Turn");
         playerTurn = 0;
