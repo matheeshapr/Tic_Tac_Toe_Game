@@ -15,12 +15,12 @@ public class HelloController {
     @FXML
     private Label lblStatus;
 
-    private int playerTurn = 0; // 0 = Player X, 1 = Player O
-    private ArrayList<Button> buttons; // බොත්තම් ඔක්කොම ලිස්ට් එකක් විදිහට තියාගන්න
+    private int playerTurn = 0;
+    private ArrayList<Button> buttons;
 
     @FXML
     public void initialize() {
-        // ගේම් එක පටන් ගද්දිම බොත්තම් ටික ලිස්ට් එකකට දාගන්නවා (Check කරන්න ලේසි වෙන්න)
+        
         buttons = new ArrayList<>(Arrays.asList(btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9));
     }
 
