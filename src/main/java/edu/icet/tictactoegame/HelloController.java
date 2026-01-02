@@ -61,7 +61,6 @@ public class HelloController {
     }
 
     private void checkWinner() {
-        // දිනන්න පුළුවන් ක්‍රම 8 (පේළි, තීරු සහ හරහට)
         for (int a = 0; a < 8; a++) {
             String line = switch (a) {
                 case 0 -> btn1.getText() + btn2.getText() + btn3.getText();
