@@ -20,7 +20,7 @@ public class HelloController {
 
     @FXML
     public void initialize() {
-        
+
         buttons = new ArrayList<>(Arrays.asList(btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9));
     }
 
@@ -28,12 +28,10 @@ public class HelloController {
     void btnOnClick(ActionEvent event) {
         Button clickedButton = (Button) event.getSource();
 
-        // බොත්තම දැනටමත් ඔබලා නම් හෝ ගේම් එක ඉවර නම් මුකුත් කරන්නේ නෑ
         if (!clickedButton.getText().isEmpty()) {
             return;
         }
 
-        // Player X ගේ වාරයද? O ගේ වාරයද?
         if (playerTurn == 0) {
             clickedButton.setText("X");
             clickedButton.setStyle("-fx-text-fill: blue; -fx-font-size: 24px;"); // X නිල් පාටින්
