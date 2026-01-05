@@ -74,7 +74,6 @@ public class HelloController {
                 default -> null;
             };
 
-            // X දිනුවාද?
             if ("XXX".equals(line)) {
                 lblStatus.setText("X Won the Game!");
                 endGame();
