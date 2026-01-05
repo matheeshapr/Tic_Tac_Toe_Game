@@ -91,7 +91,6 @@ public class HelloController {
     }
 
     private void endGame() {
-        // දිනුම් නම් බොත්තම් ඔබන්න බැරි වෙන්න Disable කරනවා
         buttons.forEach(button -> button.setDisable(true));
     }
 }
